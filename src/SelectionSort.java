@@ -2,7 +2,7 @@ import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.List;
 import java.io.IOException;
-import java.nio.file.Path;;
+import java.nio.file.Path;
 
 public class SelectionSort {
     public static <T extends Comparable<T>> void selectionSort (T []vetor){
