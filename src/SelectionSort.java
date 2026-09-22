@@ -5,16 +5,16 @@ import java.io.IOException;
 import java.nio.file.Path;;
 
 public class SelectionSort {
-
-        for(int posSel = 0; posSel < vetor.length - 1; posSel++){
+    public static <T extends Comparable<T>> void selectionSort (T []vetor){
+        for(int posSel = 0; posSel < vetor.length - 1; posSel++) {
 
             int posMenor = posSel;
-            for(int i = posMenor + 1; i < vetor.length; i++){
-                    posMenor = i;
-                }
+            for (int i = posMenor + 1; i < vetor.length; i++) {
+                posMenor = i;
             }
-                vetor[posSel] = vetor[posMenor];
-                vetor[posMenor] = temp;
+            T temp = vetor[posSel];
+            vetor[posSel] = vetor[posMenor];
+            vetor[posMenor] = temp;
         }
     }
 
